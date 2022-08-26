@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+   
+</head>
+<body>
+    <nav>
+        
+        {% if guest %}
+        <a href="{{path}}login">connecter</a>
+        <a href='{{path}}pdf.php'>Imprimer la liste</a> 
+        {% else %}
+        <a href="create">Ajouter un livre</a>
+        <a href="{{path}}Login/logout">Se deconnecter</a>
+        <a href="{{path}}user/list">Gerer utilisateurs</a>
+        <a href="">Journal</a>
+        {% endif %}
+    </nav>
+<main>
