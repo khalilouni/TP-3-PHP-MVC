@@ -7,13 +7,13 @@ class RequirePage{
 
     static function redirect($url){
 
-        header("location: http://khalil/poo/TP-2-php/".$url);
+        header("location: https://e2196079.webdev.cmaisonneuve.qc.ca/TP-3-php-MVC/".$url);
         
     }
 
     static function absolutPath($page){
 
-        return 'http://khalil/poo/TP-2-php/'.$url;
+        return 'https://e2196079.webdev.cmaisonneuve.qc.ca/TP-3-php-MVC/'.$url;
 
     }
 
